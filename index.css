@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("./images/fondweb.jpg");
+    background-position: 10%;
+}
+
+/* Barre navigation */
+
+.nav-list{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.nav-item{
+    margin-top: 0.7rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nav-item a{
+    text-shadow: 1px 1px 2px black;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.3px;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.nav-item:last-child{
+    margin-right: 4rem;
+}
+
+/* Text du milieu */
+
+.middle-desc{
+    margin-top: 20rem;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+.middle-desc h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    letter-spacing: 1.5px;
+}
+
+.middle-desc h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 920px) {
+    .nav-item{
+        margin-right: 1rem;
+    }
+    .nav-item:first-child{
+        margin-left: 1.5rem;
+    }
+    .nav-item:last-child{
+        margin-right: 1.5rem;
+    }
+}
+
+/* Background */
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
